@@ -80,4 +80,11 @@ main {
 
 footer { 
     text-align: center;
+    
+    a { 
+        color: #333;
+        text-decoration: underline;
+        font-weight: bold;
+        
+    }
 }
