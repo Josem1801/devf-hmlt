@@ -54,7 +54,10 @@
         <section id="contact">
             <h3>Contact</h3>
             <form>
-                <input type="text" placeholder="Enter your name">
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name">
+
+                <label for="bio">Bio:</label>
                 <textarea name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
                 <button type="button" onclick="alert('Thank you for submitting!')">Submit</button>
             </form>
