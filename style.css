@@ -1,7 +1,23 @@
+:root { 
+    --primary-color: #7e1dff;
+    --button-color: brown;
+    
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --button-hover-color: #ccc;
+    --white: #fff;
+
+}
+
+body.dark-mode { 
+    --secondary-color: #333;
+    --text-color: #f0f0f0;
+    --button-hover-color: #555;
+    --white: #fff;
+}
+
 html { 
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
@@ -12,11 +28,31 @@ html {
 body { 
     display: flex;
     flex-direction: column;
+    color: var(--text-color);
+    background: var(--secondary-color);
+
 }
+
+#theme-toggle { 
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    background: transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#theme-toggle:hover { 
+    background: var(--text-color);
+}
+
 
 nav{ 
     position: fixed;
-    background: #f0f0f0;
+    background: var(--secondary-color);
     padding:  10px 20px;
     left: 0;
     top: 0;
@@ -28,12 +64,13 @@ nav{
     }
 
     ul { 
+        padding: 0; 
         display: flex;
         gap: 1rem;
     }
 
     a { 
-        color: #333;
+        color: var(--text-color);
     }
 }
 
@@ -55,14 +92,14 @@ main {
         align-items: center;
         padding-bottom: 10rem;
         a { 
-            color: #7e1dff;
+            color: var(--primary-color);
         }
     }
 
     input { 
         padding: 10px;
         margin-bottom: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid var(--text-color);
         border-radius: 8px;
     }
 
@@ -75,7 +112,7 @@ main {
     }
     textarea { 
         padding: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid var(--text-color);
         border-radius: 8px;
         width: 100%;
         height: 100px;
@@ -83,14 +120,14 @@ main {
 
     button { 
         padding: 10px 20px;
-        color: white;
-        background-color: brown;
+        color: var(--white);
+        background: var(--button-color);
         border: none;
         border-radius: 8px;
         cursor: pointer;
         transition: 0.2s;
         &:hover { 
-            background-color: #ccc;
+            background: var(--button-hover-color);
         }
     }
 }
@@ -99,7 +136,7 @@ main {
 footer { 
     text-align: center;
     a { 
-        color: #333;
+        color: var(--text-color);
         text-decoration: underline;
         font-weight: bold;   
     }
