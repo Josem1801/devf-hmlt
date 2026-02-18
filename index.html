@@ -12,23 +12,55 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>This will be my first website</h1>
-        <p>I'm excited to start learning web development and create my first website. </p>
-        <form>
-            <input type="text" placeholder="Enter your name">
-            <textarea name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
-            <button type="button" onclick="alert('Form submitted!')">Submit</button>
-        </form>
+
+        <section id="home">
+            <h1>This is my first website on <a href="https://edu.devf.la/" target="_blank"
+                    rel="noopener noreferrer">DEV.F</a></h1>
+            <p>I'm excited to start learning web development and create my first website. </p>
+
+        </section>
+
+        <section id="about">
+            <h2>Im Jose, DEVF student</h2>
+            <p>And I'm learning to build websites with: </p>
+            <ul>
+                <li>
+                    <img width="20" height="20"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="HTML">
+                    HTML
+                </li>
+                <li>
+                    <img width="20" height="20"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/62/Git-logo-orange.svg" alt="HTML">
+                    Git
+                </li>
+                <li>
+                    <img width="20" height="20"
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Github_Topicon.svg" alt="HTML">
+                    Github
+                </li>
+
+            </ul>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <textarea name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
+                <button type="button" onclick="alert('Thank you for submitting!')">Submit</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>Copyright &copy; 2026 My First Website by <a href="https://github.com/Josem1801" target="_blank"
+        <p>Copyright &copy; 2026 My First HTML Website by <a href="https://github.com/Josem1801" target="_blank"
                 rel="noopener noreferrer">José</a></p>
     </footer>
 </body>
